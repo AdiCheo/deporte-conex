@@ -490,9 +490,10 @@ input[type=submit] {
     background: -ms-radial-gradient(center, ellipse cover, #116176 0%,#116177 100%); /* IE10+ */
     background: radial-gradient(ellipse at center, #116176 0%,#116177 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#116176', endColorstr='#614932',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-    background:#170B3B url(../img/logoold.png) fixed center center; /* slider background color change here */
+    /*background:#170B3B url(../img/logoold.png) fixed center center; /* slider background color change here */*/
     overflow: hidden;
     padding: 60px 0 60px;
+    min-height: 355px;
 }
 
 .form_register {
@@ -614,7 +615,7 @@ input[type=submit] {
 
 .info_slider_box {
     width: 545px;
-    margin-right: 330px;
+    float: left;
     position: relative;
     padding-top: 20px;
 }

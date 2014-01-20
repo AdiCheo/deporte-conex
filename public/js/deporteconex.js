@@ -1,4 +1,23 @@
 
+  function signUp() {
+    var self = this;
+    var username = this.$("#signup-username").val();
+    var email = this.$("#signup-email").val();
+    var password = this.$("#signup-password").val();
+
+    Parse.User.signUp(username, email, password, { ACL: new Parse.ACL() }, {
+      success: function(user) {
+        // new ManageTodosView();
+        self.undelegateEvents();
+        delete self;
+      },
+
+      error: function(user, error) {
+        self.$(".signup-form .error").html(error.message).show();
+        this.$(".signup-form button").removeAttr("disabled");
+      }
+    });
+  }
 
 $(function() {
 
@@ -351,8 +370,8 @@ $(function() {
 
       Parse.User.signUp(username, email, password, { ACL: new Parse.ACL() }, {
         success: function(user) {
-          new ManageTodosView();
-          self.undelegateEvents();
+          // new ManageTodosView();
+          // self.undelegateEvents();
           delete self;
         },
 
@@ -385,7 +404,8 @@ $(function() {
 
     render: function() {
       if (Parse.User.current()) {
-        new ManageTodosView();
+        new LogInView();
+        // new ManageTodosView();
       } else {
         new LogInView();
       }

@@ -47,9 +47,6 @@
 
 <body>
 
-    <script type = "text/javascript">
-        Parse.initialize("2mMMcQKRzuFeiC50tDQ6r6UdTt6Dgi6L9AoEkeUW", "2TrJ3xsftZAj2cn4t45Wh4WhzKgz1MFC2nxpn2M9");
-    </script>
     <!-- Todo App Interface -->
 
     <div id="todoapp">
@@ -58,9 +55,6 @@
     </div>
 
     <!-- Templates -->
-
-    <script type="text/template" id="login-template">
-    </script>
 
     <div id="wrap">
 
@@ -91,11 +85,14 @@
         <!-- HEADER LOGIN END -->
         <!-- SLIDER REGISTER BEGIN -->
 
+
         <section id="register_slider">
             <div class="center">
                 <div class="form_register">
                     <h2>Reserve a profile!</h2>
-                        <form class="signup-form">
+                    <script type="text/template" id="login-template">
+                    </script>
+                        <form action="javascript:signUp()" class="signup-form">
                             <div class="error" style="display:none"></div>
                                 <input type="text" id="signup-username" name="name" placeholder="Username" required="">
                                 <input type="email" id="signup-email" name="email" placeholder="Your email address" required="" pattern="\S+@[a-z]+.[a-z]+">
@@ -103,14 +100,13 @@
                                 <input type="submit" value="Register NOW" class="btn_big">
                             </div>
                         </form>
-                </div>
 
                 <div class="info_slider_box">
                     <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 545px; height: 350px; margin: 0px; overflow: hidden;">
                         <div id="info_slider" style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 3815px; height: 350px;">
                             <div class="slide" id="info1" style="width: 545px;">
                                 <!-- 1st info slider image change here -->
-                                <img src="./img/logo3.png" width="450" height="90" alt="">
+                                <!-- <img src="./img/logo3.png" width="450" height="90" alt=""> -->
 
                                 <!-- <iframe src="./dontusefolder/81616727.htm" allowfullscreen=""></iframe> -->
                                 <span>Coming
@@ -119,10 +115,10 @@
                             </div>
                         </div>
                     </div>
-
-                    <a href="http://deporteconex.com/" id="next" class="fa fa-caret-right" style="display: block;"></a>
-                    <a href="http://deporteconex.com/" id="prev" class="fa fa-caret-left" style="display: block;"></a>
                 </div>
+            <!--
+                    <a href="http://deporteconex.com/" id="next" class="fa fa-caret-right" style="display: block;"></a>
+                    <a href="http://deporteconex.com/" id="prev" class="fa fa-caret-left" style="display: block;"></a> -->
             </div>
         </section>
 
@@ -164,16 +160,7 @@
                         We cannot guarantee a student-athlete will receive an athletic scholarship. We can guarantee however, that we will work everyday to provide every student-athlete the chance to be noticed and recruited.
                         <br></br>
                         Sign up now. Your path to being recruited starts here. It is free and takes less than two minutes. Reserve your profile today and show your commitment to university coaches and recruiters!
-
-                        <!-- <p>We offer a recruiting platform which connects student-athletes in Latin America and the Caribbean with American university coaching staff. These connections can lead to scholarships and greater opportunities in the future for student-athletes on the recruiting platform</p>
-                        <br>
-
-                        <p>We cannot guarantee any student-athlete will receive athletic scholarships. We can guarantee however, that we will provide as many chances possible for each and every student-athlete to get a fair chance to get exposure and to get noticed by university coaches and recruiters.</p>
-                        <br>
-
-                        <p>Sign up now. Your path to being recruited starts here. It is free and takes less than 120 seconds. Reserve your profile today and show your commitment to university coaches and recruiters!</p> -->
                     </div>
-                    <!--id="tabs1"-->
                     <div id="tabs2" class="tabs_box" style="display: none;">
                         <h3>What’s in it for you?</h3>
                         We offer a recruiting platform which connects international student-athletes with American university coaches and scouts. The connections on our recruiting platform may lead to more exposure, athletic scholarships, and greater future opportunities for registered student-athletes.<br></br>
@@ -194,26 +181,6 @@
                         Physical location is no longer a limitation. Stop missing out on incredible talent and let us help you connect with athletes all over the world!<br></br>
 
                         Sign up now. It’s free and takes less than 120 seconds.
-
-                        <!-- <p>You get to recruit from a new and large talent pool, helping build impressive recruiting classes. Deporte Conex helps you win the recruiting battle by providing a new supply of talent!</p>
-                        <br>
-
-                        <h3>Why international talent?</h3>
-                        <p>Consider the following stats: (under 21 soccer, vball and basketball world rankings)</p>
-                        <p>Deporte Conex also helps diversify the student body and enhances the culture at your university</p>
-                        <br>
-                        <p>Sign up now. It’s free and takes less than 120 seconds</p>
-                    </div> -->
-                    <!--id="tabs2"-->
-                    <!--  <div id="tabs3" class="tabs_box" style="display: none;">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum auctor interdum. Aenean egestas vehicula purus in euismod. Quisque gravida commodo velit, eget porta leo sagittis vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p>Etiam dictum auctor interdum.</p>
-                        <p>Aenean egestas vehicula purus in euismod. Quisque gravida commodo velit, eget porta leo sagittis vel.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum auctor interdum. Aenean egestas vehicula purus in euismod. Quisque gravida commodo velit, eget porta leo sagittis vel.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum auctor interdum. Aenean egestas vehicula purus in euismod. Quisque gravida commodo velit, eget porta leo sagittis vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p>Etiam dictum auctor interdum.</p>
-                    </div> -->
-                    <!--id="tabs3"-->
                 </div>
             </div>
         </section>
@@ -390,16 +357,6 @@
 <!-- Templates -->
 
     <script type="text/template" id="login-template">
-    <header id = "header"> </header>
-      <div class="login">
-        <form class="login-form">
-          <h2>Log In</h2> <div class = "error"
-    style = "display:none"> </div>
-          <input type="text" id="login-username" placeholder="Username" /> <input type = "password"
-    id = "login-password"
-    placeholder = "Password" /> <button> Log In </button>
-        </form>
-
     <form class = "signup-form"> <h2> Sign Up </h2>
           <div class="error" style="display:none"></div> <input type = "text"
     id = "signup-username"

@@ -293,7 +293,7 @@ $(function() {
 
   var LogInView = Parse.View.extend({
     events: {
-      "submit form.login-form": "logIn",
+      // "submit form.login-form": "logIn",
       "submit form.signup_form": "signUp"
     },
 
