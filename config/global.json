@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "Deporte Conex": {
+            "applicationId": "2mMMcQKRzuFeiC50tDQ6r6UdTt6Dgi6L9AoEkeUW", 
+            "masterKey": "8OOoNZ3sfKOzPl3hf7FFH2r1VF01UyHurRMnYiR3"
+        }, 
+        "_default": {
+            "link": "Deporte Conex"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.2.16"
+    }
+}

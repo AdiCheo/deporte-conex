@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Html Page Specific -->
+    <meta charset="utf-8">
+    <title>Deporte Conex</title>
+    <meta name="description" content="People. Connections. Success.">
+    <meta name="author" content="Adi Cheo">
+
+    <!-- Mobile Specific -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <link rel="stylesheet" href="./css/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="./css/jquery.fancybox.css" type="text/css">
+
+    <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    <!-- JavaScript -->
+    <script src="./js/deporteconex.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js/underscore-1.1.6.js"></script>
+    <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.16.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+    <script src="./js/jquery.carouFredSel-6.2.0.js" type="text/javascript"></script>
+    <script type="text/javascript" src="./js/jquery.fancybox-1.2.1.pack.js"></script>
+    <script src="./js/custom.js"></script>
+    <script src="./js/sliders_setup.js"></script>
+
+    <!-- Placeholder script for non-supported browsers by Mathias -->
+    <script src="./js/jquery.placeholder.js"></script>
+
+    <!-- Favicons -->
+    <!-- <link rel="favicon" href="./images/logo.ico"> -->
+    <link href="css/todos.css" media="all" rel="stylesheet" type="text/css" />
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="js/underscore-1.1.6.js"></script>
+    <script src="http://www.parsecdn.com/js/parse-1.2.13.min.js"></script>
+    <script src="js/todos.js"></script>
+</head>
+
+<body>
+
+    <script type = "text/javascript">
+        Parse.initialize("2mMMcQKRzuFeiC50tDQ6r6UdTt6Dgi6L9AoEkeUW", "2TrJ3xsftZAj2cn4t45Wh4WhzKgz1MFC2nxpn2M9");
+    </script>
+    <!-- Todo App Interface -->
+
+    <div id="todoapp">
+        <div class="content">
+        </div>
+    </div>
+
+    <!-- Templates -->
+
+    <script type="text/template" id="login-template">
+    </script>
+
+    <div id="wrap">
+
+        <!-- HEADER LOGIN BEGIN -->
+
+        <header id="header_with_login" class="header">
+            <div class="center">
+                <!-- Login box -->
+                <!-- <div class="login_box">
+                    <form action="javascript:void(0)" class="login_form" novalidate="" style="display: none;">
+                        <div>
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <input type="submit" value="GO!" class="btn_grey">
+                        </div>
+                    </form>
+                    <a href="http://deporteconex.com/" class="login_link">
+                        <span class="fa fa-caret-down"></span>
+                        <span class="fa fa-caret-up"></span>Login</a>
+                </div> -->
+                <a href="index.html#">
+                    <img src="./img/logo3.png" width="300" height="60" alt="" class="logo" title="Deporte Conex - Meaningful connections for success">
+                </a>
+                <p class="slogan">People. Connections. Success.</p>
+            </div>
+        </header>
+
+        <!-- HEADER LOGIN END -->
+        <!-- SLIDER REGISTER BEGIN -->
+
+        <section id="register_slider">
+            <div class="center">
+                <div class="form_register">
+                    <h2>Reserve a profile!</h2>
+                        <form class="signup-form">
+                            <div class="error" style="display:none"></div>
+                                <input type="text" id="signup-username" name="name" placeholder="Username" required="">
+                                <input type="email" id="signup-email" name="email" placeholder="Your email address" required="" pattern="\S+@[a-z]+.[a-z]+">
+                                <input type="password" id="signup-password" name="password" placeholder="Your password" required="">
+                                <input type="submit" value="Register NOW" class="btn_big">
+                            </div>
+                        </form>
+                </div>
+
+                <div class="info_slider_box">
+                    <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 545px; height: 350px; margin: 0px; overflow: hidden;">
+                        <div id="info_slider" style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 3815px; height: 350px;">
+                            <div class="slide" id="info1" style="width: 545px;">
+                                <!-- 1st info slider image change here -->
+                                <img src="./img/logo3.png" width="450" height="90" alt="">
+
+                                <!-- <iframe src="./dontusefolder/81616727.htm" allowfullscreen=""></iframe> -->
+                                <span>Coming
+                                    <b> Soon!</b>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="http://deporteconex.com/" id="next" class="fa fa-caret-right" style="display: block;"></a>
+                    <a href="http://deporteconex.com/" id="prev" class="fa fa-caret-left" style="display: block;"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDER REGISTER END -->
+        <!-- ABOUT BLOCK BEGIN -->
+
+        <section id="about" class="box">
+            <div class="center">
+                <h2>About Deporte Conex</h2>
+                <p>Deporte Conex is an online recruiting platform which focuses on providing opportunities for international high school student athletes, and success on the court or field for American university sports coaches.</p>
+            </div>
+        </section>
+
+        <!-- ABOUT BLOCK END -->
+
+
+        <!-- TABS BLOCK BEGIN -->
+
+        <section id="tabs" class="box">
+            <div class="center">
+                <div class="tabs">
+                    <ul class="tabNavigation">
+                        <li><a class="selected" href="./index.html#tabs1">Athletes and Parents</a>
+                        </li>
+                        <li><a class="" href="./index.html#tabs2">College Coaches and Scouts</a>
+                        </li>
+                        <!--  <li><a class="" href="./index.html#tabs3">Coaches</a>
+                        </li> -->
+                    </ul>
+                    <div id="tabs1" class="tabs_box" style="display: block;">
+                        <!-- <img src="./dontusefolder/guarantees.png" alt="" height="120" width="94"> -->
+                        <h3>What we do</h3>
+                        We offer a recruiting platform which connects international student-athletes with American university coaches and scouts. The connections on our recruiting platform may lead to more exposure, athletic scholarships, and greater future opportunities for registered student-athletes.<br></br>
+                        <h3>What can you expect?</h3>
+                        <p><li>Your own personal student-athlete profile</li>
+                        <li>Premium features including video, references, and letters of interest</li>
+                        <li>Recruiting information and advanced scouting by our supporters at the NCSA</li></p>
+                        <h3> </h3>
+                        We cannot guarantee a student-athlete will receive an athletic scholarship. We can guarantee however, that we will work everyday to provide every student-athlete the chance to be noticed and recruited.
+                        <br></br>
+                        Sign up now. Your path to being recruited starts here. It is free and takes less than two minutes. Reserve your profile today and show your commitment to university coaches and recruiters!
+
+                        <!-- <p>We offer a recruiting platform which connects student-athletes in Latin America and the Caribbean with American university coaching staff. These connections can lead to scholarships and greater opportunities in the future for student-athletes on the recruiting platform</p>
+                        <br>
+
+                        <p>We cannot guarantee any student-athlete will receive athletic scholarships. We can guarantee however, that we will provide as many chances possible for each and every student-athlete to get a fair chance to get exposure and to get noticed by university coaches and recruiters.</p>
+                        <br>
+
+                        <p>Sign up now. Your path to being recruited starts here. It is free and takes less than 120 seconds. Reserve your profile today and show your commitment to university coaches and recruiters!</p> -->
+                    </div>
+                    <!--id="tabs1"-->
+                    <div id="tabs2" class="tabs_box" style="display: none;">
+                        <h3>What’s in it for you?</h3>
+                        We offer a recruiting platform which connects international student-athletes with American university coaches and scouts. The connections on our recruiting platform may lead to more exposure, athletic scholarships, and greater future opportunities for registered student-athletes.<br></br>
+                        <h3>What can you expect?</h3>
+                        <p><li>Large and unique talent pool to recruit from</li>
+                        <li>Easily search and track talented and qualified student-athletes</li>
+                        <li>Reduce time and stress finding athletes, spend more time evaluating and connecting with talented recruits</li></p>
+                        <h3> </h3>
+                        College sports are incredibly competitive, and it all begins with recruiting. Deporte Conex offers the chance to view, evaluate, and connect with talented recruits at a click of the button. We help you reduce time and reduce stress from the typically complicated and fast-paced recruiting battle.
+                        <br></br>
+                        We help you uncover new talent and build impressive recruiting classes. Stop missing out on talented athletes and let us help you win the recruiting battle!<br></br>
+                        <h3>Why international talent?</h3>
+
+                        Consider the following:<br></br>
+
+                        In 2008 16,000 international student-athletes played at NCAA schools with 70% of them playing at Division I schools. The number of international student-athletes playing intercollegiate sports has been increasing every year!<br></br>
+
+                        Physical location is no longer a limitation. Stop missing out on incredible talent and let us help you connect with athletes all over the world!<br></br>
+
+                        Sign up now. It’s free and takes less than 120 seconds.
+
+                        <!-- <p>You get to recruit from a new and large talent pool, helping build impressive recruiting classes. Deporte Conex helps you win the recruiting battle by providing a new supply of talent!</p>
+                        <br>
+
+                        <h3>Why international talent?</h3>
+                        <p>Consider the following stats: (under 21 soccer, vball and basketball world rankings)</p>
+                        <p>Deporte Conex also helps diversify the student body and enhances the culture at your university</p>
+                        <br>
+                        <p>Sign up now. It’s free and takes less than 120 seconds</p>
+                    </div> -->
+                    <!--id="tabs2"-->
+                    <!--  <div id="tabs3" class="tabs_box" style="display: none;">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum auctor interdum. Aenean egestas vehicula purus in euismod. Quisque gravida commodo velit, eget porta leo sagittis vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Etiam dictum auctor interdum.</p>
+                        <p>Aenean egestas vehicula purus in euismod. Quisque gravida commodo velit, eget porta leo sagittis vel.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum auctor interdum. Aenean egestas vehicula purus in euismod. Quisque gravida commodo velit, eget porta leo sagittis vel.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum auctor interdum. Aenean egestas vehicula purus in euismod. Quisque gravida commodo velit, eget porta leo sagittis vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Etiam dictum auctor interdum.</p>
+                    </div> -->
+                    <!--id="tabs3"-->
+                </div>
+            </div>
+        </section>
+
+        <!-- TABS BLOCK END -->
+        <!-- OPINIONS BLOCK BEGIN -->
+
+        <section id="opinions" class="box">
+            <div class="center">
+                <h2>Our Team</h2>
+                <div class="reviews_box">
+                    <div class="reviews_item">
+                        <div class="reviews_text">
+                            <p>"I'm Deporte Conex' lead developer and I'm very passionate about making education accessible and creating opportunities using the web! Join our website and help us become the #1 recruitment website on the planet!"</p>
+                            <!-- <span class="review_icon fa fa-facebook"></span>
+                             <span class="review_arrow"></span> -->
+                        </div>
+                        <div class="review_autor">
+                            <a href="http://deporteconex.com/">
+                                <img src="./img/ac.jpg" alt="">
+                            </a>
+                            <p>Adi Cheo</p>
+                        </div>
+                    </div>
+                    <div class="reviews_item">
+                        <div class="reviews_text">
+                            <p>“I care about connecting student-athletes in Latin America and the Caribbean because I saw too many friends, and competitors, go unnoticed simply because they were living in Latin America.</p>
+                            <p>I lived 10 years in San Jose, Costa Rica, and played basketball, volleyball, and soccer tournaments in CR, Panama, Honduras, El Salvador, and Guatemala. I always remember being in shock at the amount of talent there was even in these small schools.</p>
+                            <p>That is why I decided to start Deporte Conex- to connect these deserving and talented student-athletes to coaches that need their talent to help succeed on the field or court.”</p>
+                            <!-- <span class="review_icon fa fa-facebook"></span>
+                             <span class="review_arrow"></span> -->
+                        </div>
+                        <div class="review_autor">
+                            <a href="http://deporteconex.com/">
+                                <img src="./img/gs.jpg" alt="">
+                            </a>
+                            <p>George Siblesz</p>
+                        </div>
+                    </div>
+                    <div class="reviews_item">
+                        <div class="reviews_text">
+                            <p>"Throughout my life I have held a strong passion for media development and art; namely expressing ideas and emotions through types of film, animation and photography.</p>
+                            <p>Deporte Conex holds a massive ability to create meaningful connections and change lives, which is why I am proud to be the UX/Graphic Designer for such a promising website! Sign up now and be a part of this fantastic recruitment opportunity!"</p>
+                            <!-- <span class="review_icon fa fa-facebook"></span>
+                             <span class="review_arrow"></span> -->
+                        </div>
+                        <div class="review_autor">
+                            <a href="http://deporteconex.com/">
+                                <img src="./img/wn.jpg" alt="">
+                            </a>
+                            <p>Will Nass</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OPINIONS BLOCK END -->
+        <!-- QUESTIONS BLOCK BEGIN -->
+
+        <section id="questions" class="box">
+            <div class="center">
+                <h2>Feedback and Support</h2>
+                <!-- <p>Please contact our support team!</p> -->
+                <form action="javascript:void(0)" class="questions_form">
+                    <div class="questions_cell">
+                        <input type="text" name="name" placeholder="Your name" required="">
+                        <input type="email" name="email" placeholder="Your email address" required="" pattern="\S+@[a-z]+.[a-z]+">
+                    </div>
+                    <div class="questions_cell">
+                        <textarea cols="40" rows="10" placeholder="How can we better help you?"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Send question" class="btn_grey">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- QUESTIONS BLOCK END -->
+        <!-- CONTACT US BLOCK BEGIN -->
+
+        <section id="contact_us" class="box">
+            <div class="center">
+                <h2>Contact us</h2>
+                <div class="contact_info" itemscope="" itemtype="http://schema.org/Organization">
+                    <ul>
+                        <li itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+                            <span class="fa fa-map-marker"></span>
+                            <span itemprop="streetAddress">2001 SW 27th Ave</span>,
+                            <span itemprop="postalCode">33145</span>,
+                            <span itemprop="addressLocality">Miami, FL</span>
+                        </li>
+                        <li itemprop="email">
+                            <!-- <span class="fa fa-envelope"> </span>-->support@deporteconex.com</li>
+                        <li itemprop="telephone">
+                            <!-- <span class="fa fa-phone"> </span>-->1(855) 983-2916</li>
+                        <li>
+                            <!-- <span class="fa fa-skype"> </span>-->@deporteconex</li>
+                    </ul>
+                </div>
+
+                <div class="map" id="map-canvas" style="position: relative; background-color: rgb(229, 227, 223); overflow: hidden; -webkit-transform: translateZ(0);">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x88d9b7ae9eaeda97%3A0x676512151d8bc78b!2s2001+SW+27th+Ave%2C+Miami%2C+FL+33145%2C+USA!5e0!3m2!1sen!2sca!4v1390002389549" width="600" height="250" frameborder="0" style="border:0"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT US BLOCK END -->
+
+        <div class="footerHeight"></div>
+    </div>
+    <!--id="wrap"-->
+
+
+    <!-- FOOTER BLOCK BEGIN -->
+
+    <footer id="footer">
+        <div class="center">
+            <!-- Social icons -->
+            <!-- <div class="socials">
+                <ul>
+                    <li>
+                        <a href="http://dribbble.com/" target="_blank" title="Dribbble" class="fa fa-dribbble"></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/" target="_blank" title="Google+" class="fa fa-google-plus"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank" title="Facebook" class="fa fa-facebook"></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank" title="Twitter" class="fa fa-twitter"></a>
+                    </li>
+                </ul>
+            </div> -->
+            <div class="copyright">
+                <p>© Copyright 2014 Deporte Conex.
+                    <br>All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FOOTER BLOCK BEGIN -->
+
+
+    <div id="fancybox-tmp"></div>
+    <div id="fancybox-loading">
+        <div></div>
+    </div>
+    <div id="fancybox-overlay"></div>
+    <div id="fancybox-wrap">
+        <div id="fancybox-outer">
+            <div class="fancybox-bg" id="fancybox-bg-n"></div>
+            <div class="fancybox-bg" id="fancybox-bg-ne"></div>
+            <div class="fancybox-bg" id="fancybox-bg-e"></div>
+            <div class="fancybox-bg" id="fancybox-bg-se"></div>
+            <div class="fancybox-bg" id="fancybox-bg-s"></div>
+            <div class="fancybox-bg" id="fancybox-bg-sw"></div>
+            <div class="fancybox-bg" id="fancybox-bg-w"></div>
+            <div class="fancybox-bg" id="fancybox-bg-nw"></div>
+            <div id="fancybox-content"></div>
+            <a id="fancybox-close"></a>
+            <div id="fancybox-title"></div>
+            <a href="javascript:;" id="fancybox-left">
+                <span class="fancy-ico" id="fancybox-left-ico"></span>
+            </a>
+            <a href="javascript:void(0);" id="fancybox-right">
+                <span class="fancy-ico" id="fancybox-right-ico"></span>
+            </a>
+        </div>
+    </div>
+
+<!-- Templates -->
+
+    <script type="text/template" id="login-template">
+    <header id = "header"> </header>
+      <div class="login">
+        <form class="login-form">
+          <h2>Log In</h2> <div class = "error"
+    style = "display:none"> </div>
+          <input type="text" id="login-username" placeholder="Username" /> <input type = "password"
+    id = "login-password"
+    placeholder = "Password" /> <button> Log In </button>
+        </form>
+
+    <form class = "signup-form"> <h2> Sign Up </h2>
+          <div class="error" style="display:none"></div> <input type = "text"
+    id = "signup-username"
+    placeholder = "Username" /> <input type = "password"
+    id = "signup-password"
+    placeholder = "Create a Password" /> <button> Sign Up </button>
+        </form> </div>
+    </script>
+
+    <script type="text/template" id="manage-todos-template">
+    <div id = "user-info">
+        Signed in as <%= Parse.User.current().get("username") %> ( <a href = "#"
+            class = "log-out"> Log out </a>)
+      </div>
+
+            <div class = "section">
+
+            <header id = "header"> <input id = "new-todo"
+            placeholder = "What needs to be done?"
+            type = "text" /> </header>
+
+        <div id="main">
+          <input id="toggle-all" type="checkbox">
+          <label for="toggle-all">Mark all as complete</label>
+
+            <ul id = "todo-list"> <img src = 'images/spinner.gif'
+            class = 'spinner' /> </ul>
+        </div>
+
+            <div id = "todo-stats"> </div>
+      </div>
+    </script>
+
+    <script type="text/template" id="item-template">
+    <li class = "<%= done ? 'completed' : '' %>"> <div class = "view"> <input class = "toggle"
+    type = "checkbox" <%= done ? 'checked="checked"' : '' %>> <label class = "todo-content"> <%= content %> </label>
+      <button class="todo-destroy"></button> </div>
+    <input class="edit" value="<%= content %>">
+      </li>
+    </script>
+
+    <script type="text/template" id="stats-template">
+    <footer id = "footer"> <span id = "todo-count"> <strong> <%= remaining %> </strong> <%= remaining == 1 ? 'item' : 'items' %> left</span> <ul id = "filters"> <li> <a href = "javascript:void(0)"
+    id = "all"
+    class = "selected"> All </a>
+      </li> <li> <a href = "javascript:void(0)"
+    id = "active"> Active </a>
+      </li> <li> <a href = "javascript:void(0)"
+    id = "completed"> Completed </a>
+      </li> </ul>
+    <button id="clear-completed">Clear completed (<%= done %>)</button> </footer>
+    </script>
+
+    <!--  <header id="header"></header>
+      <div class="login">
+        <form class="login-form">
+          <h2>Log In</h2>
+          <div class="error" style="display:none"></div>
+          <input type="text" id="login-username" placeholder="Username" />
+          <input type="password" id="login-password" placeholder="Password" />
+          <button>Log In</button>
+        </form>
+
+        <form class="signup-form">
+          <h2>Sign Up</h2>
+          <div class="error" style="display:none"></div>
+          <input type="text" id="signup-username" placeholder="Username" />
+          <input type="password" id="signup-password" placeholder="Create a Password" />
+          <button>Sign Up</button>
+        </form>
+      </div> -->
+    </script>
+
+    <script type="text/template" id="manage-todos-template">
+    <div id = "user-info">
+        Signed in as <%= Parse.User.current().get("username") %> ( <a href = "#"
+            class = "log-out"> Log out </a>)
+      </div>
+
+            <div class = "section">
+
+            <header id = "header"> <input id = "new-todo"
+            placeholder = "What needs to be done?"
+            type = "text" /> </header>
+
+        <div id="main">
+          <input id="toggle-all" type="checkbox">
+          <label for="toggle-all">Mark all as complete</label>
+
+            <ul id = "todo-list"> <img src = 'images/spinner.gif'
+            class = 'spinner' /> </ul>
+        </div>
+
+            <div id = "todo-stats"> </div>
+      </div>
+    </script>
+
+    <script type="text/template" id="item-template">
+    <li class = "<%= done ? 'completed' : '' %>"> <div class = "view"> <input class = "toggle"
+    type = "checkbox" <%= done ? 'checked="checked"' : '' %>> <label class = "todo-content"> <%= content %> </label>
+    <button class="todo-destroy"></button> </div>
+  <input class="edit" value="<%= content %>">
+      </li>
+    </script>
+
+    <script type="text/template" id="stats-template">
+    <footer id = "footer"> <span id = "todo-count"> <strong> <%= remaining %> </strong> <%= remaining == 1 ? 'item' : 'items' %> left</span> <ul id = "filters"> <li> <a href = "javascript:void(0)"
+    id = "all"
+    class = "selected"> All </a>
+    </li> <li> <a href = "javascript:void(0)"
+    id = "active"> Active </a>
+    </li> <li> <a href = "javascript:void(0)"
+    id = "completed"> Completed </a>
+    </li> </ul>
+  <button id="clear-completed">Clear completed (<%= done %>)</button> </footer>
+  </script>
+</body>
+
+</html>
