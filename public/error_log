@@ -1,0 +1,28 @@
+[25-Jul-2012 18:16:16] PHP Fatal error:  Call to undefined method My_model::select_where2() in /home2/mindblow/public_html/tester/bob/whacky_ci/application/controllers/news.php on line 44
+[25-Jul-2012 18:16:35] PHP Fatal error:  Call to undefined method My_model::select_where2() in /home2/mindblow/public_html/tester/bob/whacky_ci/application/controllers/news.php on line 44
+[25-Jul-2012 18:16:44] PHP Fatal error:  Call to undefined method My_model::select_where2() in /home2/mindblow/public_html/tester/bob/whacky_ci/application/controllers/news.php on line 7
+[25-Jul-2012 18:17:53] PHP Fatal error:  Call to undefined method My_model::select_where2() in /home2/mindblow/public_html/tester/bob/whacky_ci/application/controllers/news.php on line 7
+[25-Jul-2012 18:19:53] PHP Fatal error:  Call to undefined method My_model::select_where2() in /home2/mindblow/public_html/tester/bob/whacky_ci/application/controllers/news.php on line 7
+[25-Jul-2012 18:20:10] PHP Fatal error:  Call to undefined method My_model::select_where2() in /home2/mindblow/public_html/tester/bob/whacky_ci/application/controllers/news.php on line 7
+[25-Jul-2012 18:21:10] PHP Fatal error:  Call to undefined method My_model::select_where2() in /home2/mindblow/public_html/tester/bob/whacky_ci/application/controllers/news.php on line 7
+[25-Jul-2012 18:22:56] PHP Fatal error:  Call to undefined method My_model::select_where2() in /home2/mindblow/public_html/tester/bob/whacky_ci/application/controllers/news.php on line 7
+[25-Jul-2012 18:24:38] PHP Fatal error:  Call to undefined method My_model::select_where2() in /home2/mindblow/public_html/tester/bob/whacky_ci/application/controllers/news.php on line 7
+[25-Jul-2012 18:25:12] PHP Fatal error:  Call to undefined method My_model::select_where2() in /home2/mindblow/public_html/tester/bob/whacky_ci/application/controllers/news.php on line 7
+[25-Jul-2012 18:26:45] PHP Fatal error:  Call to undefined method My_model::select_where2() in /home2/mindblow/public_html/tester/bob/whacky_ci/application/controllers/news.php on line 7
+[25-Jul-2012 18:26:48] PHP Fatal error:  Call to undefined method My_model::select_where2() in /home2/mindblow/public_html/tester/bob/whacky_ci/application/controllers/news.php on line 7
+[25-Jul-2012 18:27:17] PHP Parse error:  syntax error, unexpected ';' in /home2/mindblow/public_html/tester/bob/whacky_ci/application/views/front/news_view.php on line 69
+[25-Jul-2012 18:29:04] PHP Fatal error:  Call to undefined method My_model::select_where2() in /home2/mindblow/public_html/tester/bob/whacky_ci/application/controllers/news.php on line 7
+[25-Jul-2012 18:30:13] PHP Parse error:  syntax error, unexpected ';' in /home2/mindblow/public_html/tester/bob/whacky_ci/application/views/front/news_view.php on line 69
+[25-Jul-2012 22:25:00] PHP Parse error:  syntax error, unexpected T_ELSE in /home2/mindblow/public_html/tester/bob/whacky_ci/application/controllers/contact_us.php on line 65
+[25-Jul-2012 23:50:04] PHP Parse error:  syntax error, unexpected $end in /home2/mindblow/public_html/tester/bob/whacky_ci/application/controllers/contact_us.php on line 85
+[26-Jul-2012 17:56:50] PHP Parse error:  syntax error, unexpected T_STRING in /home2/mindblow/public_html/tester/bob/whacky_ci/application/controllers/contact_us.php on line 121
+[26-Jul-2012 17:56:53] PHP Parse error:  syntax error, unexpected T_STRING in /home2/mindblow/public_html/tester/bob/whacky_ci/application/controllers/contact_us.php on line 121
+[26-Jul-2012 18:28:03] PHP Parse error:  syntax error, unexpected T_STRING, expecting ',' or ';' in /home2/mindblow/public_html/tester/bob/whacky_ci/application/views/front/contact_us_view.php on line 34
+[26-Jul-2012 22:27:30] PHP Parse error:  syntax error, unexpected '<' in /home2/mindblow/public_html/tester/bob/whacky_ci/application/views/front/clubs_view.php on line 51
+[26-Jul-2012 22:46:31] PHP Parse error:  syntax error, unexpected '}' in /home2/mindblow/public_html/tester/bob/whacky_ci/application/controllers/inventory.php on line 34
+[26-Jul-2012 23:59:27] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home2/mindblow/public_html/tester/bob/whacky_ci/application/controllers/inventory.php on line 11
+[26-Jul-2012 23:59:31] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home2/mindblow/public_html/tester/bob/whacky_ci/application/controllers/inventory.php on line 11
+[26-Jul-2012 23:59:37] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home2/mindblow/public_html/tester/bob/whacky_ci/application/controllers/inventory.php on line 11
+[27-Jul-2012 01:47:30] PHP Parse error:  syntax error, unexpected T_ELSE in /home2/mindblow/public_html/tester/bob/whacky_ci/application/controllers/inventory.php on line 48
+[29-Jul-2012 22:35:10] PHP Fatal error:  Call to undefined method CI_Loader::make() in /home2/mindblow/public_html/tester/bob/whacky_ci/application/controllers/inventory.php on line 35
+[29-Jul-2012 22:37:38] PHP Fatal error:  Call to undefined method CI_Loader::make() in /home2/mindblow/public_html/tester/bob/whacky_ci/application/controllers/inventory.php on line 35

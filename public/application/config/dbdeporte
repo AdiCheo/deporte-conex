@@ -1,0 +1,511 @@
+-- phpMyAdmin SQL Dump
+-- version 2.11.11.3
+-- http://www.phpmyadmin.net
+--
+-- Host: 68.178.139.178
+-- Generation Time: Nov 29, 2013 at 08:46 AM
+-- Server version: 5.0.96
+-- PHP Version: 5.1.6
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `dbdeporte`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `countries`
+--
+
+CREATE TABLE `countries` (
+  `id` int(11) NOT NULL auto_increment,
+  `country_code` varchar(2) NOT NULL default '',
+  `country_name` varchar(100) NOT NULL default '',
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=240 ;
+
+--
+-- Dumping data for table `countries`
+--
+
+INSERT INTO `countries` VALUES(1, 'US', 'United States');
+INSERT INTO `countries` VALUES(2, 'CA', 'Canada');
+INSERT INTO `countries` VALUES(3, 'AF', 'Afghanistan');
+INSERT INTO `countries` VALUES(4, 'AL', 'Albania');
+INSERT INTO `countries` VALUES(5, 'DZ', 'Algeria');
+INSERT INTO `countries` VALUES(6, 'DS', 'American Samoa');
+INSERT INTO `countries` VALUES(7, 'AD', 'Andorra');
+INSERT INTO `countries` VALUES(8, 'AO', 'Angola');
+INSERT INTO `countries` VALUES(9, 'AI', 'Anguilla');
+INSERT INTO `countries` VALUES(10, 'AQ', 'Antarctica');
+INSERT INTO `countries` VALUES(11, 'AG', 'Antigua and/or Barbuda');
+INSERT INTO `countries` VALUES(12, 'AR', 'Argentina');
+INSERT INTO `countries` VALUES(13, 'AM', 'Armenia');
+INSERT INTO `countries` VALUES(14, 'AW', 'Aruba');
+INSERT INTO `countries` VALUES(15, 'AU', 'Australia');
+INSERT INTO `countries` VALUES(16, 'AT', 'Austria');
+INSERT INTO `countries` VALUES(17, 'AZ', 'Azerbaijan');
+INSERT INTO `countries` VALUES(18, 'BS', 'Bahamas');
+INSERT INTO `countries` VALUES(19, 'BH', 'Bahrain');
+INSERT INTO `countries` VALUES(20, 'BD', 'Bangladesh');
+INSERT INTO `countries` VALUES(21, 'BB', 'Barbados');
+INSERT INTO `countries` VALUES(22, 'BY', 'Belarus');
+INSERT INTO `countries` VALUES(23, 'BE', 'Belgium');
+INSERT INTO `countries` VALUES(24, 'BZ', 'Belize');
+INSERT INTO `countries` VALUES(25, 'BJ', 'Benin');
+INSERT INTO `countries` VALUES(26, 'BM', 'Bermuda');
+INSERT INTO `countries` VALUES(27, 'BT', 'Bhutan');
+INSERT INTO `countries` VALUES(28, 'BO', 'Bolivia');
+INSERT INTO `countries` VALUES(29, 'BA', 'Bosnia and Herzegovina');
+INSERT INTO `countries` VALUES(30, 'BW', 'Botswana');
+INSERT INTO `countries` VALUES(31, 'BV', 'Bouvet Island');
+INSERT INTO `countries` VALUES(32, 'BR', 'Brazil');
+INSERT INTO `countries` VALUES(33, 'IO', 'British lndian Ocean Territory');
+INSERT INTO `countries` VALUES(34, 'BN', 'Brunei Darussalam');
+INSERT INTO `countries` VALUES(35, 'BG', 'Bulgaria');
+INSERT INTO `countries` VALUES(36, 'BF', 'Burkina Faso');
+INSERT INTO `countries` VALUES(37, 'BI', 'Burundi');
+INSERT INTO `countries` VALUES(38, 'KH', 'Cambodia');
+INSERT INTO `countries` VALUES(39, 'CM', 'Cameroon');
+INSERT INTO `countries` VALUES(40, 'CV', 'Cape Verde');
+INSERT INTO `countries` VALUES(41, 'KY', 'Cayman Islands');
+INSERT INTO `countries` VALUES(42, 'CF', 'Central African Republic');
+INSERT INTO `countries` VALUES(43, 'TD', 'Chad');
+INSERT INTO `countries` VALUES(44, 'CL', 'Chile');
+INSERT INTO `countries` VALUES(45, 'CN', 'China');
+INSERT INTO `countries` VALUES(46, 'CX', 'Christmas Island');
+INSERT INTO `countries` VALUES(47, 'CC', 'Cocos (Keeling) Islands');
+INSERT INTO `countries` VALUES(48, 'CO', 'Colombia');
+INSERT INTO `countries` VALUES(49, 'KM', 'Comoros');
+INSERT INTO `countries` VALUES(50, 'CG', 'Congo');
+INSERT INTO `countries` VALUES(51, 'CK', 'Cook Islands');
+INSERT INTO `countries` VALUES(52, 'CR', 'Costa Rica');
+INSERT INTO `countries` VALUES(53, 'HR', 'Croatia (Hrvatska)');
+INSERT INTO `countries` VALUES(54, 'CU', 'Cuba');
+INSERT INTO `countries` VALUES(55, 'CY', 'Cyprus');
+INSERT INTO `countries` VALUES(56, 'CZ', 'Czech Republic');
+INSERT INTO `countries` VALUES(57, 'DK', 'Denmark');
+INSERT INTO `countries` VALUES(58, 'DJ', 'Djibouti');
+INSERT INTO `countries` VALUES(59, 'DM', 'Dominica');
+INSERT INTO `countries` VALUES(60, 'DO', 'Dominican Republic');
+INSERT INTO `countries` VALUES(61, 'TP', 'East Timor');
+INSERT INTO `countries` VALUES(62, 'EC', 'Ecudaor');
+INSERT INTO `countries` VALUES(63, 'EG', 'Egypt');
+INSERT INTO `countries` VALUES(64, 'SV', 'El Salvador');
+INSERT INTO `countries` VALUES(65, 'GQ', 'Equatorial Guinea');
+INSERT INTO `countries` VALUES(66, 'ER', 'Eritrea');
+INSERT INTO `countries` VALUES(67, 'EE', 'Estonia');
+INSERT INTO `countries` VALUES(68, 'ET', 'Ethiopia');
+INSERT INTO `countries` VALUES(69, 'FK', 'Falkland Islands (Malvinas)');
+INSERT INTO `countries` VALUES(70, 'FO', 'Faroe Islands');
+INSERT INTO `countries` VALUES(71, 'FJ', 'Fiji');
+INSERT INTO `countries` VALUES(72, 'FI', 'Finland');
+INSERT INTO `countries` VALUES(73, 'FR', 'France');
+INSERT INTO `countries` VALUES(74, 'FX', 'France, Metropolitan');
+INSERT INTO `countries` VALUES(75, 'GF', 'French Guiana');
+INSERT INTO `countries` VALUES(76, 'PF', 'French Polynesia');
+INSERT INTO `countries` VALUES(77, 'TF', 'French Southern Territories');
+INSERT INTO `countries` VALUES(78, 'GA', 'Gabon');
+INSERT INTO `countries` VALUES(79, 'GM', 'Gambia');
+INSERT INTO `countries` VALUES(80, 'GE', 'Georgia');
+INSERT INTO `countries` VALUES(81, 'DE', 'Germany');
+INSERT INTO `countries` VALUES(82, 'GH', 'Ghana');
+INSERT INTO `countries` VALUES(83, 'GI', 'Gibraltar');
+INSERT INTO `countries` VALUES(84, 'GR', 'Greece');
+INSERT INTO `countries` VALUES(85, 'GL', 'Greenland');
+INSERT INTO `countries` VALUES(86, 'GD', 'Grenada');
+INSERT INTO `countries` VALUES(87, 'GP', 'Guadeloupe');
+INSERT INTO `countries` VALUES(88, 'GU', 'Guam');
+INSERT INTO `countries` VALUES(89, 'GT', 'Guatemala');
+INSERT INTO `countries` VALUES(90, 'GN', 'Guinea');
+INSERT INTO `countries` VALUES(91, 'GW', 'Guinea-Bissau');
+INSERT INTO `countries` VALUES(92, 'GY', 'Guyana');
+INSERT INTO `countries` VALUES(93, 'HT', 'Haiti');
+INSERT INTO `countries` VALUES(94, 'HM', 'Heard and Mc Donald Islands');
+INSERT INTO `countries` VALUES(95, 'HN', 'Honduras');
+INSERT INTO `countries` VALUES(96, 'HK', 'Hong Kong');
+INSERT INTO `countries` VALUES(97, 'HU', 'Hungary');
+INSERT INTO `countries` VALUES(98, 'IS', 'Iceland');
+INSERT INTO `countries` VALUES(99, 'IN', 'India');
+INSERT INTO `countries` VALUES(100, 'ID', 'Indonesia');
+INSERT INTO `countries` VALUES(101, 'IR', 'Iran (Islamic Republic of)');
+INSERT INTO `countries` VALUES(102, 'IQ', 'Iraq');
+INSERT INTO `countries` VALUES(103, 'IE', 'Ireland');
+INSERT INTO `countries` VALUES(104, 'IL', 'Israel');
+INSERT INTO `countries` VALUES(105, 'IT', 'Italy');
+INSERT INTO `countries` VALUES(106, 'CI', 'Ivory Coast');
+INSERT INTO `countries` VALUES(107, 'JM', 'Jamaica');
+INSERT INTO `countries` VALUES(108, 'JP', 'Japan');
+INSERT INTO `countries` VALUES(109, 'JO', 'Jordan');
+INSERT INTO `countries` VALUES(110, 'KZ', 'Kazakhstan');
+INSERT INTO `countries` VALUES(111, 'KE', 'Kenya');
+INSERT INTO `countries` VALUES(112, 'KI', 'Kiribati');
+INSERT INTO `countries` VALUES(113, 'KP', 'Korea, Democratic People''s Republic of');
+INSERT INTO `countries` VALUES(114, 'KR', 'Korea, Republic of');
+INSERT INTO `countries` VALUES(115, 'KW', 'Kuwait');
+INSERT INTO `countries` VALUES(116, 'KG', 'Kyrgyzstan');
+INSERT INTO `countries` VALUES(117, 'LA', 'Lao People''s Democratic Republic');
+INSERT INTO `countries` VALUES(118, 'LV', 'Latvia');
+INSERT INTO `countries` VALUES(119, 'LB', 'Lebanon');
+INSERT INTO `countries` VALUES(120, 'LS', 'Lesotho');
+INSERT INTO `countries` VALUES(121, 'LR', 'Liberia');
+INSERT INTO `countries` VALUES(122, 'LY', 'Libyan Arab Jamahiriya');
+INSERT INTO `countries` VALUES(123, 'LI', 'Liechtenstein');
+INSERT INTO `countries` VALUES(124, 'LT', 'Lithuania');
+INSERT INTO `countries` VALUES(125, 'LU', 'Luxembourg');
+INSERT INTO `countries` VALUES(126, 'MO', 'Macau');
+INSERT INTO `countries` VALUES(127, 'MK', 'Macedonia');
+INSERT INTO `countries` VALUES(128, 'MG', 'Madagascar');
+INSERT INTO `countries` VALUES(129, 'MW', 'Malawi');
+INSERT INTO `countries` VALUES(130, 'MY', 'Malaysia');
+INSERT INTO `countries` VALUES(131, 'MV', 'Maldives');
+INSERT INTO `countries` VALUES(132, 'ML', 'Mali');
+INSERT INTO `countries` VALUES(133, 'MT', 'Malta');
+INSERT INTO `countries` VALUES(134, 'MH', 'Marshall Islands');
+INSERT INTO `countries` VALUES(135, 'MQ', 'Martinique');
+INSERT INTO `countries` VALUES(136, 'MR', 'Mauritania');
+INSERT INTO `countries` VALUES(137, 'MU', 'Mauritius');
+INSERT INTO `countries` VALUES(138, 'TY', 'Mayotte');
+INSERT INTO `countries` VALUES(139, 'MX', 'Mexico');
+INSERT INTO `countries` VALUES(140, 'FM', 'Micronesia, Federated States of');
+INSERT INTO `countries` VALUES(141, 'MD', 'Moldova, Republic of');
+INSERT INTO `countries` VALUES(142, 'MC', 'Monaco');
+INSERT INTO `countries` VALUES(143, 'MN', 'Mongolia');
+INSERT INTO `countries` VALUES(144, 'MS', 'Montserrat');
+INSERT INTO `countries` VALUES(145, 'MA', 'Morocco');
+INSERT INTO `countries` VALUES(146, 'MZ', 'Mozambique');
+INSERT INTO `countries` VALUES(147, 'MM', 'Myanmar');
+INSERT INTO `countries` VALUES(148, 'NA', 'Namibia');
+INSERT INTO `countries` VALUES(149, 'NR', 'Nauru');
+INSERT INTO `countries` VALUES(150, 'NP', 'Nepal');
+INSERT INTO `countries` VALUES(151, 'NL', 'Netherlands');
+INSERT INTO `countries` VALUES(152, 'AN', 'Netherlands Antilles');
+INSERT INTO `countries` VALUES(153, 'NC', 'New Caledonia');
+INSERT INTO `countries` VALUES(154, 'NZ', 'New Zealand');
+INSERT INTO `countries` VALUES(155, 'NI', 'Nicaragua');
+INSERT INTO `countries` VALUES(156, 'NE', 'Niger');
+INSERT INTO `countries` VALUES(157, 'NG', 'Nigeria');
+INSERT INTO `countries` VALUES(158, 'NU', 'Niue');
+INSERT INTO `countries` VALUES(159, 'NF', 'Norfork Island');
+INSERT INTO `countries` VALUES(160, 'MP', 'Northern Mariana Islands');
+INSERT INTO `countries` VALUES(161, 'NO', 'Norway');
+INSERT INTO `countries` VALUES(162, 'OM', 'Oman');
+INSERT INTO `countries` VALUES(163, 'PK', 'Pakistan');
+INSERT INTO `countries` VALUES(164, 'PW', 'Palau');
+INSERT INTO `countries` VALUES(165, 'PA', 'Panama');
+INSERT INTO `countries` VALUES(166, 'PG', 'Papua New Guinea');
+INSERT INTO `countries` VALUES(167, 'PY', 'Paraguay');
+INSERT INTO `countries` VALUES(168, 'PE', 'Peru');
+INSERT INTO `countries` VALUES(169, 'PH', 'Philippines');
+INSERT INTO `countries` VALUES(170, 'PN', 'Pitcairn');
+INSERT INTO `countries` VALUES(171, 'PL', 'Poland');
+INSERT INTO `countries` VALUES(172, 'PT', 'Portugal');
+INSERT INTO `countries` VALUES(173, 'PR', 'Puerto Rico');
+INSERT INTO `countries` VALUES(174, 'QA', 'Qatar');
+INSERT INTO `countries` VALUES(175, 'RE', 'Reunion');
+INSERT INTO `countries` VALUES(176, 'RO', 'Romania');
+INSERT INTO `countries` VALUES(177, 'RU', 'Russian Federation');
+INSERT INTO `countries` VALUES(178, 'RW', 'Rwanda');
+INSERT INTO `countries` VALUES(179, 'KN', 'Saint Kitts and Nevis');
+INSERT INTO `countries` VALUES(180, 'LC', 'Saint Lucia');
+INSERT INTO `countries` VALUES(181, 'VC', 'Saint Vincent and the Grenadines');
+INSERT INTO `countries` VALUES(182, 'WS', 'Samoa');
+INSERT INTO `countries` VALUES(183, 'SM', 'San Marino');
+INSERT INTO `countries` VALUES(184, 'ST', 'Sao Tome and Principe');
+INSERT INTO `countries` VALUES(185, 'SA', 'Saudi Arabia');
+INSERT INTO `countries` VALUES(186, 'SN', 'Senegal');
+INSERT INTO `countries` VALUES(187, 'SC', 'Seychelles');
+INSERT INTO `countries` VALUES(188, 'SL', 'Sierra Leone');
+INSERT INTO `countries` VALUES(189, 'SG', 'Singapore');
+INSERT INTO `countries` VALUES(190, 'SK', 'Slovakia');
+INSERT INTO `countries` VALUES(191, 'SI', 'Slovenia');
+INSERT INTO `countries` VALUES(192, 'SB', 'Solomon Islands');
+INSERT INTO `countries` VALUES(193, 'SO', 'Somalia');
+INSERT INTO `countries` VALUES(194, 'ZA', 'South Africa');
+INSERT INTO `countries` VALUES(195, 'GS', 'South Georgia South Sandwich Islands');
+INSERT INTO `countries` VALUES(196, 'ES', 'Spain');
+INSERT INTO `countries` VALUES(197, 'LK', 'Sri Lanka');
+INSERT INTO `countries` VALUES(198, 'SH', 'St. Helena');
+INSERT INTO `countries` VALUES(199, 'PM', 'St. Pierre and Miquelon');
+INSERT INTO `countries` VALUES(200, 'SD', 'Sudan');
+INSERT INTO `countries` VALUES(201, 'SR', 'Suriname');
+INSERT INTO `countries` VALUES(202, 'SJ', 'Svalbarn and Jan Mayen Islands');
+INSERT INTO `countries` VALUES(203, 'SZ', 'Swaziland');
+INSERT INTO `countries` VALUES(204, 'SE', 'Sweden');
+INSERT INTO `countries` VALUES(205, 'CH', 'Switzerland');
+INSERT INTO `countries` VALUES(206, 'SY', 'Syrian Arab Republic');
+INSERT INTO `countries` VALUES(207, 'TW', 'Taiwan');
+INSERT INTO `countries` VALUES(208, 'TJ', 'Tajikistan');
+INSERT INTO `countries` VALUES(209, 'TZ', 'Tanzania, United Republic of');
+INSERT INTO `countries` VALUES(210, 'TH', 'Thailand');
+INSERT INTO `countries` VALUES(211, 'TG', 'Togo');
+INSERT INTO `countries` VALUES(212, 'TK', 'Tokelau');
+INSERT INTO `countries` VALUES(213, 'TO', 'Tonga');
+INSERT INTO `countries` VALUES(214, 'TT', 'Trinidad and Tobago');
+INSERT INTO `countries` VALUES(215, 'TN', 'Tunisia');
+INSERT INTO `countries` VALUES(216, 'TR', 'Turkey');
+INSERT INTO `countries` VALUES(217, 'TM', 'Turkmenistan');
+INSERT INTO `countries` VALUES(218, 'TC', 'Turks and Caicos Islands');
+INSERT INTO `countries` VALUES(219, 'TV', 'Tuvalu');
+INSERT INTO `countries` VALUES(220, 'UG', 'Uganda');
+INSERT INTO `countries` VALUES(221, 'UA', 'Ukraine');
+INSERT INTO `countries` VALUES(222, 'AE', 'United Arab Emirates');
+INSERT INTO `countries` VALUES(223, 'GB', 'United Kingdom');
+INSERT INTO `countries` VALUES(224, 'UM', 'United States minor outlying islands');
+INSERT INTO `countries` VALUES(225, 'UY', 'Uruguay');
+INSERT INTO `countries` VALUES(226, 'UZ', 'Uzbekistan');
+INSERT INTO `countries` VALUES(227, 'VU', 'Vanuatu');
+INSERT INTO `countries` VALUES(228, 'VA', 'Vatican City State');
+INSERT INTO `countries` VALUES(229, 'VE', 'Venezuela');
+INSERT INTO `countries` VALUES(230, 'VN', 'Vietnam');
+INSERT INTO `countries` VALUES(231, 'VG', 'Virigan Islands (British)');
+INSERT INTO `countries` VALUES(232, 'VI', 'Virgin Islands (U.S.)');
+INSERT INTO `countries` VALUES(233, 'WF', 'Wallis and Futuna Islands');
+INSERT INTO `countries` VALUES(234, 'EH', 'Western Sahara');
+INSERT INTO `countries` VALUES(235, 'YE', 'Yemen');
+INSERT INTO `countries` VALUES(236, 'YU', 'Yugoslavia');
+INSERT INTO `countries` VALUES(237, 'ZR', 'Zaire');
+INSERT INTO `countries` VALUES(238, 'ZM', 'Zambia');
+INSERT INTO `countries` VALUES(239, 'ZW', 'Zimbabwe');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_address`
+--
+
+CREATE TABLE `tbl_address` (
+  `address_id` int(11) NOT NULL auto_increment,
+  `user_id` int(11) NOT NULL,
+  `address` text NOT NULL,
+  `city` varchar(50) NOT NULL,
+  `state` varchar(50) NOT NULL,
+  `postal` varchar(10) NOT NULL,
+  `country_id` int(11) NOT NULL,
+  `date_added` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`address_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `tbl_address`
+--
+
+INSERT INTO `tbl_address` VALUES(1, 1, '3367 V. Mapa St. Sta. Mesa ', 'Manila', 'NCR', '1016', 169, '2013-11-14 05:51:16');
+INSERT INTO `tbl_address` VALUES(2, 2, ';jkl jkl;', 'jkl', 'jlkj', ';j', 13, '2013-11-14 09:50:03');
+INSERT INTO `tbl_address` VALUES(3, 3, 'Calle Naranjo Lakota # 3', 'San Jose', 'Costa Rica', '1000', 52, '2013-11-14 09:30:45');
+INSERT INTO `tbl_address` VALUES(4, 4, ' ', '', '', '', 52, '2013-11-15 05:57:47');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_athlete_sports`
+--
+
+CREATE TABLE `tbl_athlete_sports` (
+  `athlete_sports_id` int(11) NOT NULL auto_increment,
+  `user_id` int(11) NOT NULL,
+  `sports_id` int(11) NOT NULL,
+  `highschool` varchar(50) NOT NULL,
+  `clubteam` varchar(50) NOT NULL,
+  `position` varchar(50) NOT NULL,
+  `individual_awards` text NOT NULL,
+  `team_awards` text NOT NULL,
+  `gpa` varchar(20) NOT NULL,
+  `sat_score` varchar(20) NOT NULL,
+  `toefl_score` varchar(20) NOT NULL,
+  `act_score` varchar(20) NOT NULL,
+  `date_added` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`athlete_sports_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `tbl_athlete_sports`
+--
+
+INSERT INTO `tbl_athlete_sports` VALUES(1, 1, 3, '23', '23', 'Point Guard', 'Most Valuable Player', 'Mhytical FIve', '88.5', '1', '2', '3', '2013-11-14 05:51:16');
+INSERT INTO `tbl_athlete_sports` VALUES(2, 2, 4, 'kl;j', 'l;kk;l', 'jj;klkj', '', '', '', '', '', '', '2013-11-14 09:50:03');
+INSERT INTO `tbl_athlete_sports` VALUES(3, 3, 3, 'Marian Baker School #3', 'Goicochea #17', 'Pointguard', '2011 MVP 2012 MVP 2013 AASCA ALL STAR ', '2011 AASCA SECOND PLACE 2012 AASCA SECOND PLACE 2013 AASCA THIRD PLACE 2011 ACTION FIRST PLACE 2013 ACTION FIRST PLACE', '3.00', 'NA', 'NA ', 'NA', '2013-11-14 09:30:45');
+INSERT INTO `tbl_athlete_sports` VALUES(4, 4, 3, 'Marian Baker School, #13', '', 'Center', '', '', '4.30', '', '', '', '2013-11-15 05:57:47');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_contact_number`
+--
+
+CREATE TABLE `tbl_contact_number` (
+  `contact_id` int(11) NOT NULL auto_increment,
+  `user_id` int(11) NOT NULL,
+  `phone_number` varchar(30) NOT NULL,
+  `date_added` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`contact_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `tbl_contact_number`
+--
+
+INSERT INTO `tbl_contact_number` VALUES(1, 1, '639238124807', '2013-11-14 05:51:16');
+INSERT INTO `tbl_contact_number` VALUES(2, 2, 'ljljkllkjl;j;lk', '2013-11-14 09:50:03');
+INSERT INTO `tbl_contact_number` VALUES(3, 3, '88366888', '2013-11-14 09:30:45');
+INSERT INTO `tbl_contact_number` VALUES(4, 4, '', '2013-11-15 05:57:47');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_parents`
+--
+
+CREATE TABLE `tbl_parents` (
+  `parent_id` int(11) NOT NULL auto_increment,
+  `user_id` int(11) NOT NULL,
+  `mom_name` varchar(100) NOT NULL,
+  `mom_email` varchar(100) NOT NULL,
+  `dad_name` varchar(100) NOT NULL,
+  `dad_email` varchar(100) NOT NULL,
+  `date_added` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`parent_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `tbl_parents`
+--
+
+INSERT INTO `tbl_parents` VALUES(1, 1, 'Judy T. Macutay', 'judy.macutay@yahoo.com', 'Danilo D. Loteria', 'danilo.loteria@yahoo.com', '2013-11-14 05:51:16');
+INSERT INTO `tbl_parents` VALUES(2, 2, 'kjlkjl', 'j', 'ljl', 'k;jlk', '2013-11-14 09:50:03');
+INSERT INTO `tbl_parents` VALUES(3, 3, 'Milena ', 'mdelgado@gmail.com', 'Javier', 'jvillalobos@drywallcr.com', '2013-11-14 09:30:45');
+INSERT INTO `tbl_parents` VALUES(4, 4, 'Jennifer Dahlager', '', 'Jon Dahlager', '', '2013-11-15 05:57:47');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_personal_information`
+--
+
+CREATE TABLE `tbl_personal_information` (
+  `user_id` int(11) NOT NULL auto_increment,
+  `firstname` varchar(50) NOT NULL,
+  `lastname` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `birthday` date NOT NULL,
+  `expected_graduate` varchar(20) NOT NULL,
+  `height` varchar(10) NOT NULL,
+  `weight` int(10) NOT NULL,
+  `date_added` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`user_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `tbl_personal_information`
+--
+
+INSERT INTO `tbl_personal_information` VALUES(1, 'Sydney', 'Loteria', 'loteriasydneytot@yahoo.com', '2013-12-20', 'March 2014', '170', 50, '2013-11-14 05:51:16');
+INSERT INTO `tbl_personal_information` VALUES(2, 'j', 'j', 'i@hotmail.com', '2013-11-26', 'January 2017', 'lkj', 0, '2013-11-14 09:50:03');
+INSERT INTO `tbl_personal_information` VALUES(3, 'Adrian', 'Villalobos', 'avdel096@hotmail.com', '2013-11-06', 'June 2015', '1.81', 170, '2013-11-14 09:30:45');
+INSERT INTO `tbl_personal_information` VALUES(4, 'Jonathan ', 'Dahlager', 'jonathandmk@gmail.com', '1997-11-19', 'June 2016', '192cm', 230, '2013-11-15 05:57:47');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_record`
+--
+
+CREATE TABLE `tbl_record` (
+  `id` int(11) NOT NULL auto_increment,
+  `school` varchar(100) NOT NULL,
+  `fullname` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `type` varchar(50) NOT NULL,
+  `message` text NOT NULL,
+  `country_id` int(11) NOT NULL,
+  `date_subscribed` datetime NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=69 ;
+
+--
+-- Dumping data for table `tbl_record`
+--
+
+INSERT INTO `tbl_record` VALUES(18, '', '', '', '', '', 0, '2013-10-03 10:21:09');
+INSERT INTO `tbl_record` VALUES(19, '', 'f', 'jo@hotmail.com', 'Parent', 'jk', 107, '2013-10-03 10:21:28');
+INSERT INTO `tbl_record` VALUES(17, '', 'Juan Colicchio', 'Juancolicchio@hotmail.com', 'Student-Athlete', 'Hola bebe', 2, '2013-10-01 02:43:47');
+INSERT INTO `tbl_record` VALUES(16, '', 'George', 'george_s24@hotmail.com', 'Parent', 'test, \n\ntest, test\n\nsinerely,\n\ntest', 9, '2013-09-30 09:16:55');
+INSERT INTO `tbl_record` VALUES(15, '', 'George', 'george_s24@hotmail.com', 'Parent', 'test, \n\ntest, test\n\nsinerely,\n\ntest', 9, '2013-09-30 09:16:55');
+INSERT INTO `tbl_record` VALUES(6, '', 'Sydney M. Loteria', 'enriquez_jen07@yahoo.com', 'Parent', 'asdasda', 0, '2013-09-28 11:43:47');
+INSERT INTO `tbl_record` VALUES(7, '', 'George S', 'george_s24@hotmail.com', 'High School Coach', 'kldjf;laj\n\n\ndfkl;ajd;klj\n\n\ndfklajl;kdf', 0, '2013-09-29 12:48:14');
+INSERT INTO `tbl_record` VALUES(8, '', 'Asim Abbasi ', 'asimabbasi4@hotmail.com', 'Student-Athlete', 'This site looks awesome!', 0, '2013-09-29 03:24:00');
+INSERT INTO `tbl_record` VALUES(14, '', 'Veronica Siblesz', 'verosiblesz@hotmail.com', 'Student-Athlete', 'hi george, this is really cool. i''m excited for it hehehehe', 1, '2013-09-30 12:13:12');
+INSERT INTO `tbl_record` VALUES(13, '', 'Alessandra Siblesz', 'asiblesz16@hotmail.com', 'Other', 'Live long and prosper. ', 1, '2013-09-30 09:58:05');
+INSERT INTO `tbl_record` VALUES(20, '', 'JAVIER MARTINEZ', 'javier@aisb.edu.bo', 'High School Coach', '', 28, '2013-10-16 09:17:21');
+INSERT INTO `tbl_record` VALUES(21, '', 'Mario Alberto Alegría Alcedo ', 'marioalberto-97@hotmail.com', 'Student-Athlete', '', 168, '2013-10-17 08:11:58');
+INSERT INTO `tbl_record` VALUES(22, '', 'Xue Yang', 'xueyang@cmail.carleton.ca', 'Other', 'To Whom it May Concern,\n\n\n I found your company''s job post for Lead Developer that is recommand by .\n\nMartin Kratky-Katz\n\nI am very interested in this position, and my background matches this position. I will graduate with Computer Science Degree in November this year, and my resume and cover letter upon request. \n\n \n\nCan you please let me know if it is possible that you can arrange to interview me? My phone number is at the end of the message.\n\n\n\n\nLooking forwards to your reply and have a nice day.\n\n\n\n\nBest regards,\n\nXue Yang\n\n613-204-0638\n\nxueyang@cmail.carleton.ca', 2, '2013-10-17 10:00:37');
+INSERT INTO `tbl_record` VALUES(23, '', 'Marcelo Arturo Maldonado Gonzalez', 'mart8_23@hotmail.com', 'High School Coach', 'SOY ENTRENADOR DE EQUIPOS DE FUTBOL, Y ME GUSTARIA PODER AMPLIAR MIS CONOCIMIENTOS EN METODOS DE ENTRENAMIENTO Y PODER TRABAJAR EN ALGUNA INSTITUCION EN ESTADOS UNIDOS O CANADA. Y ME GUSTARIA SABER LAS POSIBILIDADES Y REQUISITOS. MUCHAS GRACIAS. \nTAMBIEN PODER GENERAR UN INTERCAMBIO CON MUCHACHOS Y NIÑOS EN EL AMBITO DEL FUTBOL SOCCER.', 139, '2013-10-17 10:49:07');
+INSERT INTO `tbl_record` VALUES(24, '', 'Alejandro Jose Monsalv Garcia', 'el_aleman-2@hotmail.com', 'Student-Athlete', 'Soy jugador de futbol y busco una oprtunidad extranjera juego en la filial de el Carabobo f.c su-18 y soy un buen atleta responsable y con mucha disiplina ', 229, '2013-10-17 11:16:12');
+INSERT INTO `tbl_record` VALUES(25, '', 'Jorge Horacio Avendaño  Mendez', 'jorge_horacio619@hotmail.com', 'Student-Athlete', 'Bueno pues como ya les di mi nombre no hace falta decircelos yo practico futbol y soy estudiante tiene como 2 años que lo practico a nivel de un club juego en un equipo llanero llamados GUERREROS F.C. de chiapas, mexico, yo quisiera una oportunidad para estudiar mas pero a la vez seguir con el futbol yo estudio tercero de secundaria y practico el futbol y pues si me llegaran hacer esta oportunidad seria genial ya que le echaria muchas ganas a nivel estudiantil y a nivel deportivo aaa... se me olvidaba tambien practico lo que es basketbol donde soy muy bueno tambien participe en un torneo de basketbol que se organiza en todas las escuelas donde por culpa de los arbitros quedamos segundo lugar a nivel estatal, yo vivo con mi mama y 2 hermanos mi mama se separo de mi papa cuando yo tenia 7 años y como ella es maestra yo me encargue siempre de mis hermanitos pero lo bueno es que ya crecieron y ya somos independientes..\nde antemano muchas gracias por leer mi historia y espero me tomen en cuenta.', 139, '2013-10-17 11:31:20');
+INSERT INTO `tbl_record` VALUES(26, '', 'Roberto Salinas', 'rm_salinas6@hotmail.com', 'Student-Athlete', 'Basketball is my life.', 64, '2013-10-17 11:36:55');
+INSERT INTO `tbl_record` VALUES(27, '', 'Adrian Sojo', 'cachorros_53@hotmail.com', 'Student-Athlete', '\n\nI am a young Venezuelan who plays baseball and wants to study', 229, '2013-10-17 11:51:49');
+INSERT INTO `tbl_record` VALUES(28, '', 'Francisco Alejandro Santini', 'francisco.santinii@hotmail.com', 'Student-Athlete', '', 12, '2013-10-17 12:05:04');
+INSERT INTO `tbl_record` VALUES(29, '', 'reynaldo jaure ', 'el_rey23_"3@hotmail.com', 'Parent', '', 229, '2013-10-17 12:08:38');
+INSERT INTO `tbl_record` VALUES(30, '', 'julian david zuluaga', 'julian-z-g@hotmail.com', 'Student-Athlete', 'quiero ser un jugador de futbol, tengo buena caracteristica y soy bueno en el estudio tambien.', 48, '2013-10-17 12:25:10');
+INSERT INTO `tbl_record` VALUES(31, '', 'jose manuel eguurola colmenarez', 'josemecolmenares@hotmail.com', 'University Coach', 'quiero jugar fútbol,aprender, desarrollarme, tener las habilidades necesarias y proyectarme a futuro ', 229, '2013-10-17 12:25:26');
+INSERT INTO `tbl_record` VALUES(32, '', 'FACEBOOK.COM', 'CARLOSX_29@HOTMAIL.COM', 'Student-Athlete', 'POR FAVOR DENME LA OPORTUNIDAD DE MI VIDA JUEGO BALONCESTO', 229, '2013-10-17 04:24:22');
+INSERT INTO `tbl_record` VALUES(33, '', 'Luis Antonio Rodríguez Flores', 'cr7elmejor2010@hotmail.com', 'Student-Athlete', 'Por medio de la presente, expreso mis deseos y al mismo tiempo registro mi solicitud para ser reclutado por Deporte Conex.\nPractico Futbol Soccer y veo esto como una gran oportunidad para progresar.\nAgradezco de antemano su atención\n', 139, '2013-10-17 06:11:31');
+INSERT INTO `tbl_record` VALUES(34, '', 'german camilo oviedo rubio ', 'familiaoviedorubio@hotmail.com', 'Student-Athlete', 'Buenas noches me interesa mucho soy futbolista ', 48, '2013-10-17 07:02:25');
+INSERT INTO `tbl_record` VALUES(35, '', 'Marlon stiven ', 'marlon.f.y.s@hotmail.com ', 'Student-Athlete', 'estoy fisicamente apto para realizar actividades fisicas tengo una especializacion en ingles y pues me siento apto para lo que este preparado !!\n', 48, '2013-10-17 07:03:09');
+INSERT INTO `tbl_record` VALUES(36, '', 'hugo', 'elmadrilista_mejia@hotmail.com', 'Student-Athlete', 'Quiero jugar futbol', 229, '2013-10-17 07:03:59');
+INSERT INTO `tbl_record` VALUES(37, '', 'endry quero', 'endry-quero@hotmail.com', 'High School Coach', 'me gustaría mucho llegar a ser un jugador de fútbol profesional, ojala pudiera tener la oportunidad de llegar a serlo, es mi mas preciado sueño. ', 229, '2013-10-17 07:07:13');
+INSERT INTO `tbl_record` VALUES(38, '', 'Michael Garcés Vargas', 'michgv95@hotmail.com', 'Student-Athlete', 'Hi, I found out that they are offering this opportunity to study, my passion is sports especially basketball, I''m student Science of Sport and Recreation program of Technological University of Pereira, I would love to have the opportunity to go to another country to study and play basketball.\nThank you for receiving my message.', 48, '2013-10-17 07:10:48');
+INSERT INTO `tbl_record` VALUES(39, '', 'wili diego torre mateos', 'wili.15.tk@hotmail.com', 'Other', 'qiero ser un jugador estreya', 168, '2013-10-17 07:18:39');
+INSERT INTO `tbl_record` VALUES(40, '', 'jesus', 'cardosiyo_007@hotmail.com', 'Student-Athlete', 'soy estudiante y quiero mas información acerca de este programa  ', 229, '2013-10-17 08:20:59');
+INSERT INTO `tbl_record` VALUES(41, '', 'Jonathan', 'jonathan_mendieta1508@hotmail.com', 'Student-Athlete', 'Espero me tomen en cuenta y me pueda ayudar quiero desarrollarme tanto en el estudio como en el ambito deportivo espero su respuesta', 229, '2013-10-18 12:12:42');
+INSERT INTO `tbl_record` VALUES(42, '', 'Francisco mesias rivasplata', 'fran20.19@hotmail.com', 'Student-Athlete', 'quisieraa estar en un equipo de futboll me gusta mucho el futbol es mi pasioo', 168, '2013-10-18 01:36:12');
+INSERT INTO `tbl_record` VALUES(43, '', 'jaison rodrguez', 'elpeon.francisco@hotmail.com', 'University Coach', '', 229, '2013-10-18 02:24:57');
+INSERT INTO `tbl_record` VALUES(44, '', 'Jorge alejandro osuna medina', '', 'Student-Athlete', '', 139, '2013-10-18 02:39:50');
+INSERT INTO `tbl_record` VALUES(45, '', 'Ignacio ', 'ignaciobarreiro2@live.com', 'Student-Athlete', 'I am born athlete, from age 3 swimming semi professionally do, eh played football and play for 2 years in the local selection of my city to Volleyball. I would love to be recruited by some to continue my career and see new places.', 225, '2013-10-18 04:33:05');
+INSERT INTO `tbl_record` VALUES(46, '', 'Antony Naranjo', 'elpapidetodas1000@hotmail.com', 'Student-Athlete', 'Hola , ya salí de secundaria y quiero jugar fútbol , 17 años. 05/08/1996 . Juego fútbol desde muy pequeño y lo juego bien , se adaptarme a todo tipo de dificultades en el campo y las se afrontar con madurez.', 229, '2013-10-18 05:36:49');
+INSERT INTO `tbl_record` VALUES(47, 'Jose Rizal University', 'Sydney Loteria', 'loteriasydneytot@yahoo.com', 'Student-Athlete', 'test', 169, '2013-10-18 08:43:22');
+INSERT INTO `tbl_record` VALUES(48, 'Carleton University', 'Mykell Reifer', 'mickeydan_18@hotmail.com', 'Student-Athlete', '', 21, '2013-10-21 04:19:41');
+INSERT INTO `tbl_record` VALUES(49, 'MARIAN BAKER SCHOOL', 'MARILYN SIBLESZ', 'MESIBLESZ@MEDIPHARMAINC.COM', 'Other', 'MOTHER OF A TALENTED FEMALE BASKETBALL PLAYER CURRENTLY IN THE 9TH GRADE', 52, '2013-10-21 07:17:52');
+INSERT INTO `tbl_record` VALUES(50, 'MARIAN BAKER SCHOOL', 'MARILYN SIBLESZ', 'MESIBLESZ@MEDIPHARMAINC.COM', 'Other', 'MOTHER OF A TALENTED FEMALE BASKETBALL PLAYER CURRENTLY IN THE 9TH GRADE', 52, '2013-10-21 07:17:52');
+INSERT INTO `tbl_record` VALUES(51, 'MARIAN BAKER SCHOOL', 'MARILYN SIBLESZ', 'MESIBLESZ@MEDIPHARMAINC.COM', 'Other', 'MOTHER OF A TALENTED FEMALE BASKETBALL PLAYER CURRENTLY IN THE 9TH GRADE', 52, '2013-10-21 07:17:52');
+INSERT INTO `tbl_record` VALUES(52, 'UCF', 'Terri Williams', 'twilliams@aassa.com', 'Parent', 'Would like More info!', 1, '2013-10-24 07:02:33');
+INSERT INTO `tbl_record` VALUES(53, 'Lucaya International School', 'Nigel Kirkby', 'nkirkby@lucayainternationalschool.com', 'High School Coach', '', 18, '2013-10-29 06:44:40');
+INSERT INTO `tbl_record` VALUES(54, 'School of the Nations', 'Filipe Padua', 'filipe.padua@edn.org.br', 'High School Coach', 'Hi, my name is Filipe, I''m a high school coach in Brasilia, Brazil. Someone contacted us about college scolarships and I''m very interested in talking about this opportunity. We have a kid playing in the USA already so we would love to open different doors and offer this chance to many more of our students. Hope to hear from you guys soon. Thank you. Filipe', 32, '2013-10-30 07:46:33');
+INSERT INTO `tbl_record` VALUES(55, 'School of the Nations', 'Filipe Padua', 'filipe.padua@edn.org.br', 'High School Coach', 'Hi, my name is Filipe, I''m a high school coach in Brasilia, Brazil. Someone contacted us about college scolarships and I''m very interested in talking about this opportunity. We have a kid playing in the USA already so we would love to open different doors and offer this chance to many more of our students. Hope to hear from you guys soon. Thank you. Filipe', 32, '2013-10-30 07:46:40');
+INSERT INTO `tbl_record` VALUES(56, 'School of the Nations', 'Filipe Padua', 'filipe.padua@edn.org.br', 'High School Coach', 'Hi, my name is Filipe, I''m a high school coach in Brasilia, Brazil. Someone contacted us about college scolarships and I''m very interested in talking about this opportunity. We have a kid playing in the USA already so we would love to open different doors and offer this chance to many more of our students. Hope to hear from you guys soon. Thank you. Filipe', 32, '2013-10-30 07:52:28');
+INSERT INTO `tbl_record` VALUES(57, 'School of the Nations', 'Filipe Padua', 'filipe.padua@edn.org.br', 'High School Coach', 'Hi, my name is Filipe, I''m a high school coach in Brasilia, Brazil. Someone contacted us about college scolarships and I''m very interested in talking about this opportunity. We have a kid playing in the USA already so we would love to open different doors and offer this chance to many more of our students. Hope to hear from you guys soon. Thank you. Filipe', 32, '2013-10-30 07:52:30');
+INSERT INTO `tbl_record` VALUES(58, 'American School Foundation of Mexico City', 'Robert Wilson', 'wilsonr@asf.edu.mx', 'Director/Executive', 'We have an interest in your site. I am the Head of Athletics and Extended Learning. I would like in on the ground floor. We have a few students in swimming and soccer who are potentially college level athletes. ', 139, '2013-11-12 06:05:40');
+INSERT INTO `tbl_record` VALUES(59, 'Santa Cruz Cooperative School', 'Josue Abuawad', 'josue_abuawad@hotmail.com', 'Student-Athlete', 'I am looking for a future university that I can continue playing soccer which is my passion. Solid and quick defender and captain of the high school soccer team.', 28, '2013-11-12 06:55:29');
+INSERT INTO `tbl_record` VALUES(63, 'Marian Baker School', 'Adrian', 'avdel096@hotmail.com', 'Student-Athlete', 'I am 17 years old and play the pointguard position in my highschool, averaging 18 points per game, 7 assist and 2 rebounds. I shoot 35 percent from the 3-point range and 88 from the free throw line. ', 52, '2013-11-14 09:25:28');
+INSERT INTO `tbl_record` VALUES(64, 'Marian Baker School', 'Jonathan Dahlager', 'jonathandmk@gmail.com', 'Student-Athlete', 'I''m an american student living in Costa RIca, playing basketball and volleyball. Class of 2016', 52, '2013-11-15 05:54:26');
+INSERT INTO `tbl_record` VALUES(65, 'uasd', 'luis alexander vargas nuñez', 'dj_daka056@hotmail.com', 'Student-Athlete', 'hola', 60, '2013-11-19 10:06:39');
+INSERT INTO `tbl_record` VALUES(66, 'Saint John', 'Brad White', 'brad@connectvip.ca', 'Director/Executive', 'Hi,\n\nI''m wondering if your company would be interested in having a Web Video built to further help educate people about your services and to put you a step above the competition.\n\n\nPlease let me know if I can do a call with someone in your Marketing group to discuss further.\n\nSincerely,\n\n\nBrad White\nConnectVIP\nBusiness Development\nsales@connectvip.ca\n506-636-2603', 2, '2013-11-21 08:13:34');
+INSERT INTO `tbl_record` VALUES(67, '', 'Biadraway', 'gavyn.jervis@aol.com', 'Student-Athlete', '<a href=http://trustdrugsshop.com/cialis/>cialis online without prescription</a> - <a href=http://trustdrugsshop.com/cialis/>cialis 10 mg</a> , http://trustdrugsshop.com/cialis/ cialis online', 214, '2013-11-24 04:34:29');
+INSERT INTO `tbl_record` VALUES(68, 'Instituto Tecnológico de Costa Rica', 'Daniel Rosales', 'rosalesd095@gmail.com', 'Student-Athlete', 'Preparándome para competir en la disciplina de boxeo.', 52, '2013-11-26 03:42:46');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_sports`
+--
+
+CREATE TABLE `tbl_sports` (
+  `sports_id` int(11) NOT NULL auto_increment,
+  `sports_name` varchar(100) NOT NULL,
+  `sport_desc` text NOT NULL,
+  PRIMARY KEY  (`sports_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+
+--
+-- Dumping data for table `tbl_sports`
+--
+
+INSERT INTO `tbl_sports` VALUES(1, 'Soccer', 'Soccer');
+INSERT INTO `tbl_sports` VALUES(2, 'Volleyball', 'Volleyball');
+INSERT INTO `tbl_sports` VALUES(3, 'Basketball', 'Basketball');
+INSERT INTO `tbl_sports` VALUES(4, 'Tennis', 'Tennis');
+INSERT INTO `tbl_sports` VALUES(5, 'Baseball', 'Baseball');
+INSERT INTO `tbl_sports` VALUES(6, 'Swimming', 'Swimming');
+INSERT INTO `tbl_sports` VALUES(7, 'Squash', 'Squash');
